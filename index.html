@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily Castillo · Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in Data Analytics & Cloud Engineering. Open to remote opportunities worldwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <button type="button" class="nav-logo" onclick="scrollToSection('#hero')">
+        <span class="nav-logo-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </span>
+        <span><span class="accent">Emily</span><span class="light">Castillo</span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <button type="button" onclick="scrollToSection('#about')">About</button>
+        <button type="button" onclick="scrollToSection('#skills')">Skills</button>
+        <button type="button" onclick="scrollToSection('#projects')">Projects</button>
+        <button type="button" onclick="scrollToSection('#experience')">Experience</button>
+        <button type="button" onclick="scrollToSection('#contact')">Contact</button>
+        <button type="button" class="btn-hire" onclick="scrollToSection('#contact')">Hire Me</button>
+      </div>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button type="button" onclick="scrollToSection('#about'); closeMenu()">About</button>
+      <button type="button" onclick="scrollToSection('#skills'); closeMenu()">Skills</button>
+      <button type="button" onclick="scrollToSection('#projects'); closeMenu()">Projects</button>
+      <button type="button" onclick="scrollToSection('#experience'); closeMenu()">Experience</button>
+      <button type="button" onclick="scrollToSection('#contact'); closeMenu()">Contact</button>
+      <button type="button" class="btn-hire-mobile" onclick="scrollToSection('#contact'); closeMenu()">Hire Me</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="dot-grid"></div>
+    <div class="glow-top"></div>
+    <div class="glow-bottom-right"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge"><span class="dot-green"></span> Available for Work</span>
+          <span class="badge">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Remote · Worldwide
+          </span>
+          <span class="badge">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Open to Relocation
+          </span>
+          <span class="badge">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Commercial · Industrial
+          </span>
+        </div>
+        <h1 class="hero-name">Emily<br>Castillo</h1>
+        <div class="hero-role">
+          <span class="role-line"></span>
+          <p>Full Stack Developer · Data Analytics · Data Engineering</p>
+        </div>
+        <p class="hero-desc">Building scalable full stack applications with a deep focus on data architecture, analytics platforms, and cloud-native solutions. Passionate about transforming complex data into intelligent business systems for commercial and industrial sectors.</p>
+        <div class="hero-cta">
+          <button type="button" class="btn-primary" onclick="scrollToSection('#projects')">View My Work</button>
+          <button type="button" class="btn-outline" onclick="scrollToSection('#contact')">Get In Touch</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-value">5+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat"><div class="stat-value">20+</div><div class="stat-label">Projects Delivered</div></div>
+          <div class="stat"><div class="stat-value">3</div><div class="stat-label">Tech Domains</div></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-outer">
+          <div class="hero-image-container">
+            <img src="images/emily.png" alt="Emily Castillo" class="hero-img" onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('img-fallback')">
+          </div>
+          <div class="hero-badge-float">
+            <div class="float-name">Emily Castillo</div>
+            <div class="float-sub">Data &amp; Cloud</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <button type="button" onclick="scrollToSection('#about')">
+        <span class="scroll-label">SCROLL</span>
+        <svg class="scroll-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-divider"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2>Driven by Data, <span class="accent">Powered by Code</span></h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <div class="card bio-card">
+            <div class="card-accent-line"></div>
+            <p>I'm a Full Stack Developer with a strong orientation toward data engineering and analytics. With over 5 years of experience building end-to-end solutions, I specialize in designing systems that are not just functional — but intelligent.</p>
+            <p>My work spans commercial and industrial sectors, where I've architected data platforms, led engineering teams, and delivered scalable cloud-native applications. I combine deep technical expertise with strong interpersonal skills to bridge the gap between engineering and business.</p>
+            <p>I'm open to remote positions worldwide and excited about opportunities to work internationally — bringing both technical depth and cultural adaptability to any global team.</p>
+          </div>
+          <div class="highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+              <div><div class="highlight-title">Full Stack Development</div><div class="highlight-sub">React · Node.js · Java · .NET</div></div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+              <div><div class="highlight-title">Data &amp; Analytics</div><div class="highlight-sub">ETL · PostgreSQL · Power BI · Spark</div></div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div><div class="highlight-title">Cloud &amp; DevOps</div><div class="highlight-sub">AWS · Azure DevOps · Docker · CI/CD</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="subsection-title">Soft Skills &amp; Work Style</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-card">
+              <div class="soft-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="soft-label">Team Leadership</div>
+              <div class="soft-desc">Cross-functional collaboration across distributed teams</div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <div class="soft-label">Adaptability</div>
+              <div class="soft-desc">Thrives in fast-paced, evolving environments</div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="soft-label">Communication</div>
+              <div class="soft-desc">Clear technical &amp; non-technical communication</div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <div class="soft-label">Leadership</div>
+              <div class="soft-desc">Guides teams toward scalable technical solutions</div>
+            </div>
+          </div>
+          <div class="quick-info-card">
+            <h3 class="quick-info-title">Quick Info</h3>
+            <div class="quick-info-list">
+              <div class="qi-row"><span class="qi-label">Location</span><span class="qi-value">Available Worldwide</span></div>
+              <div class="qi-row"><span class="qi-label">Work Mode</span><span class="qi-value">Remote · Onsite · Hybrid</span></div>
+              <div class="qi-row"><span class="qi-label">Sectors</span><span class="qi-value">Commercial · Industrial</span></div>
+              <div class="qi-row"><span class="qi-label">Languages</span><span class="qi-value">Spanish · English</span></div>
+              <div class="qi-row last"><span class="qi-label">Focus Areas</span><span class="qi-value">Data · Cloud · Full Stack</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-alt">
+    <div class="section-divider"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Skills</span>
+        <h2>Full Stack <span class="accent">Technology Stack</span></h2>
+        <p class="section-desc">A comprehensive toolkit spanning frontend, backend, data engineering, and cloud infrastructure.</p>
+      </div>
+      <div class="skill-filters">
+        <button type="button" class="filter-btn active" data-filter="all" onclick="filterSkills(this,'all')">All</button>
+        <button type="button" class="filter-btn" data-filter="frontend" onclick="filterSkills(this,'frontend')">Frontend</button>
+        <button type="button" class="filter-btn" data-filter="backend" onclick="filterSkills(this,'backend')">Backend</button>
+        <button type="button" class="filter-btn" data-filter="databases" onclick="filterSkills(this,'databases')">Databases</button>
+        <button type="button" class="filter-btn" data-filter="cloud" onclick="filterSkills(this,'cloud')">Cloud &amp; DevOps</button>
+        <button type="button" class="filter-btn" data-filter="data" onclick="filterSkills(this,'data')">Data &amp; Analytics</button>
+        <button type="button" class="filter-btn" data-filter="other" onclick="filterSkills(this,'other')">Architecture &amp; More</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--cyan"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags"><span class="tag core">HTML5</span><span class="tag core">CSS3</span><span class="tag core">JavaScript</span><span class="tag core">TypeScript</span><span class="tag core">React</span><span class="tag proficient">Vite</span></div>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--indigo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+            <h3 class="color-indigo">Backend</h3>
+          </div>
+          <div class="skill-tags"><span class="tag core tag--indigo">Java</span><span class="tag core tag--indigo">Python</span><span class="tag core tag--indigo">Node.js</span><span class="tag proficient">NestJS</span><span class="tag proficient">C++</span><span class="tag proficient">.NET</span><span class="tag proficient">GraphQL</span><span class="tag core tag--indigo">REST APIs</span></div>
+        </div>
+        <div class="skill-card" data-category="databases">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+            <h3 class="color-green">Databases</h3>
+          </div>
+          <div class="skill-tags"><span class="tag core tag--green">PostgreSQL</span><span class="tag core tag--green">PL/SQL</span><span class="tag proficient">MongoDB</span><span class="tag core tag--green">SQL</span><span class="tag core tag--green">Data Modeling</span><span class="tag proficient">Query Optimization</span></div>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--amber"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+            <h3 class="color-amber">Cloud &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags"><span class="tag proficient tag--amber">AWS</span><span class="tag proficient tag--amber">Azure DevOps</span><span class="tag core tag--amber">Docker</span><span class="tag core tag--amber">Git</span><span class="tag core tag--amber">GitHub</span><span class="tag proficient tag--amber">CI/CD</span></div>
+        </div>
+        <div class="skill-card" data-category="data">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--pink"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <h3 class="color-pink">Data &amp; Analytics</h3>
+          </div>
+          <div class="skill-tags"><span class="tag core tag--pink">ETL</span><span class="tag core tag--pink">Pandas</span><span class="tag proficient tag--pink">Power BI</span><span class="tag core tag--pink">SQL Analytics</span><span class="tag proficient tag--pink">Apache Spark</span><span class="tag proficient tag--pink">Big Data</span></div>
+        </div>
+        <div class="skill-card" data-category="other">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--cyan"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg></div>
+            <h3>Architecture &amp; More</h3>
+          </div>
+          <div class="skill-tags"><span class="tag core">Microservices</span><span class="tag core">API Design</span><span class="tag core">Clean Architecture</span><span class="tag proficient">Testing</span><span class="tag proficient">Linux</span><span class="tag familiar">Security Best Practices</span></div>
+        </div>
+      </div>
+      <div class="skill-legend">
+        <div class="legend-item"><span class="legend-swatch core-swatch"></span> Core / Expert</div>
+        <div class="legend-item"><span class="legend-swatch proficient-swatch"></span> Proficient</div>
+        <div class="legend-item"><span class="legend-swatch familiar-swatch"></span> Familiar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-divider"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Projects</span>
+        <h2>Things I've <span class="accent">Built</span></h2>
+        <p class="section-desc">A selection of full stack and data-driven applications built for real-world commercial and industrial use cases.</p>
+      </div>
+      <div class="projects-list">
+
+        <div class="project-card">
+          <div class="project-image proj-img--left">
+            <img src="https://images.unsplash.com/photo-1720962158883-b0f2021fb51e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Task Management System" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-num proj-num--cyan">01</div>
+            <div class="project-icon-badge badge-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+          </div>
+          <div class="project-content proj-content--right">
+            <div class="project-subtitle proj-sub--cyan">Full Stack · Productivity Platform</div>
+            <h3 class="project-title">Task Management System</h3>
+            <p class="project-desc">A comprehensive task and project management platform built with a microservices architecture. Features real-time collaboration, role-based access control, Kanban and Gantt views, and a powerful analytics dashboard tracking team performance metrics.</p>
+            <ul class="project-highlights">
+              <li><span class="bullet bullet--cyan"></span>Microservices with NestJS and Docker</li>
+              <li><span class="bullet bullet--cyan"></span>Real-time updates via WebSockets</li>
+              <li><span class="bullet bullet--cyan"></span>PostgreSQL with optimized query design</li>
+              <li><span class="bullet bullet--cyan"></span>Role-based access control (RBAC)</li>
+            </ul>
+            <div class="project-tags"><span>React</span><span>NestJS</span><span>PostgreSQL</span><span>Docker</span><span>GraphQL</span><span>TypeScript</span><span>CI/CD</span></div>
+            <div class="project-links">
+              <button type="button" class="btn-demo btn-demo--cyan" onclick="openModal('modal-task')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <button type="button" class="btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image proj-img--right">
+            <img src="https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Intelligent Accounting System" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-num proj-num--indigo">02</div>
+            <div class="project-icon-badge badge-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+          <div class="project-content proj-content--left">
+            <div class="project-subtitle proj-sub--indigo">Backend · Financial Intelligence</div>
+            <h3 class="project-title">Intelligent Accounting System</h3>
+            <p class="project-desc">An intelligent accounting and financial management system designed for commercial businesses. Integrates automated data reconciliation, PL/SQL-powered reporting engines, predictive cash-flow analysis, and audit-trail logging.</p>
+            <ul class="project-highlights">
+              <li><span class="bullet bullet--indigo"></span>Automated reconciliation with Python ETL</li>
+              <li><span class="bullet bullet--indigo"></span>PL/SQL stored procedures for reporting</li>
+              <li><span class="bullet bullet--indigo"></span>Audit trail with full compliance logging</li>
+              <li><span class="bullet bullet--indigo"></span>Predictive cash-flow analytics module</li>
+            </ul>
+            <div class="project-tags"><span>Java</span><span>.NET</span><span>PL/SQL</span><span>PostgreSQL</span><span>Python</span><span>REST APIs</span><span>Azure</span></div>
+            <div class="project-links">
+              <button type="button" class="btn-demo btn-demo--indigo" onclick="openModal('modal-accounting')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <button type="button" class="btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image proj-img--left">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Business Data Analytics Platform" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-num proj-num--emerald">03</div>
+            <div class="project-icon-badge badge-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+          </div>
+          <div class="project-content proj-content--right">
+            <div class="project-subtitle proj-sub--emerald">Big Data · Analytics · BI</div>
+            <h3 class="project-title">Business Data Analytics Platform</h3>
+            <p class="project-desc">An end-to-end business intelligence platform for industrial clients. Ingests multi-source data through scalable ETL pipelines, processes millions of records with Apache Spark, and delivers interactive Power BI dashboards for real-time strategic decision-making.</p>
+            <ul class="project-highlights">
+              <li><span class="bullet bullet--emerald"></span>ETL pipelines handling 50TB+ of data</li>
+              <li><span class="bullet bullet--emerald"></span>Apache Spark for distributed processing</li>
+              <li><span class="bullet bullet--emerald"></span>Power BI dashboards for stakeholders</li>
+              <li><span class="bullet bullet--emerald"></span>AWS S3 + Redshift data warehousing</li>
+            </ul>
+            <div class="project-tags"><span>Python</span><span>Apache Spark</span><span>AWS</span><span>Power BI</span><span>Pandas</span><span>MongoDB</span><span>ETL</span><span>SQL</span></div>
+            <div class="project-links">
+              <button type="button" class="btn-demo btn-demo--emerald" onclick="openModal('modal-analytics')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                View Details
+              </button>
+              <button type="button" class="btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+  <div id="modal-task" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-task-title" onclick="closeModalOutside(event,'modal-task')">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('modal-task')" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <div class="modal-header modal-header--cyan">
+        <div class="modal-icon badge-cyan"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div><p class="modal-subtitle proj-sub--cyan">Full Stack · Productivity Platform</p><h2 id="modal-task-title" class="modal-title">Task Management System</h2></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1720962158883-b0f2021fb51e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900" alt="Task Management System" class="modal-image" loading="lazy">
+      <div class="modal-body">
+        <h3 class="modal-section-title">Overview</h3>
+        <p>A comprehensive task and project management platform designed to streamline team workflows at scale. Built with a microservices architecture so each module (tasks, notifications, analytics, auth) can be deployed and scaled independently.</p>
+        <h3 class="modal-section-title">Key Features</h3>
+        <ul class="modal-list">
+          <li>Real-time collaboration using WebSockets — multiple users can update boards simultaneously</li>
+          <li>Kanban and Gantt views with drag-and-drop, deadline tracking, and priority flags</li>
+          <li>Role-based access control (RBAC) — Admins, Managers, and Contributors with granular permissions</li>
+          <li>Analytics dashboard tracking team velocity, task completion rates, and sprint burndown</li>
+          <li>Automated email/in-app notifications on assignments, due dates, and blockers</li>
+        </ul>
+        <h3 class="modal-section-title">Architecture</h3>
+        <p>Each service runs as an independent NestJS microservice communicating via message queues. PostgreSQL handles transactional data with optimized indexing; Redis is used for session management and caching. The frontend is a React + TypeScript SPA consuming a GraphQL gateway.</p>
+        <div class="modal-tags"><span>React</span><span>NestJS</span><span>PostgreSQL</span><span>Docker</span><span>GraphQL</span><span>TypeScript</span><span>CI/CD</span><span>Redis</span><span>WebSockets</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-accounting" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-accounting-title" onclick="closeModalOutside(event,'modal-accounting')">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('modal-accounting')" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <div class="modal-header modal-header--indigo">
+        <div class="modal-icon badge-indigo"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div><p class="modal-subtitle proj-sub--indigo">Backend · Financial Intelligence</p><h2 id="modal-accounting-title" class="modal-title">Intelligent Accounting System</h2></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900" alt="Intelligent Accounting System" class="modal-image" loading="lazy">
+      <div class="modal-body">
+        <h3 class="modal-section-title">Overview</h3>
+        <p>An intelligent financial management system built for commercial businesses that need auditable, automated accounting workflows. The system replaces manual reconciliation with Python-driven ETL pipelines and enforces compliance through structured audit trails.</p>
+        <h3 class="modal-section-title">Key Features</h3>
+        <ul class="modal-list">
+          <li>Automated bank reconciliation: Python ETL matches transactions against ledger entries nightly</li>
+          <li>PL/SQL stored procedures power P&amp;L, balance sheet, and cash-flow reports with sub-second queries</li>
+          <li>Full audit trail — every financial mutation is logged with user, timestamp, and before/after values</li>
+          <li>Predictive cash-flow module uses historical patterns to forecast 30/60/90-day liquidity</li>
+          <li>Role-based access for accountants, auditors, and executives with data masking where required</li>
+        </ul>
+        <h3 class="modal-section-title">Architecture</h3>
+        <p>Backend services split between Java Spring Boot for business logic and .NET for ERP integrations. PostgreSQL with PL/SQL handles all financial computations. Azure DevOps manages CI/CD with automated regression tests before every deployment.</p>
+        <div class="modal-tags"><span>Java</span><span>.NET</span><span>PL/SQL</span><span>PostgreSQL</span><span>Python</span><span>REST APIs</span><span>Azure</span><span>Spring Boot</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-analytics" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-analytics-title" onclick="closeModalOutside(event,'modal-analytics')">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('modal-analytics')" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <div class="modal-header modal-header--emerald">
+        <div class="modal-icon badge-emerald"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <div><p class="modal-subtitle proj-sub--emerald">Big Data · Analytics · BI</p><h2 id="modal-analytics-title" class="modal-title">Business Data Analytics Platform</h2></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900" alt="Business Data Analytics Platform" class="modal-image" loading="lazy">
+      <div class="modal-body">
+        <h3 class="modal-section-title">Overview</h3>
+        <p>An end-to-end business intelligence platform built for industrial clients dealing with high-volume, multi-source operational data. Ingests, transforms, and visualizes data at scale to support real-time strategic decision-making across manufacturing and logistics operations.</p>
+        <h3 class="modal-section-title">Key Features</h3>
+        <ul class="modal-list">
+          <li>Scalable ETL pipelines ingesting from IoT sensors, ERP systems, and external APIs — processing 50TB+ daily</li>
+          <li>Apache Spark on AWS EMR for distributed transformation and aggregation jobs</li>
+          <li>Interactive Power BI dashboards embedded in a React web app for executive and operational views</li>
+          <li>AWS S3 data lake + Redshift data warehouse with automated partitioning and lifecycle policies</li>
+          <li>Anomaly detection alerts for KPI deviations using statistical thresholds on Spark Streaming</li>
+        </ul>
+        <h3 class="modal-section-title">Architecture</h3>
+        <p>Data flows from source systems into an S3 raw zone, gets cleaned via PySpark jobs orchestrated by Apache Airflow, and lands in Redshift for analytics queries. The entire infrastructure is provisioned with Terraform and deployed through CI/CD pipelines on Azure DevOps.</p>
+        <div class="modal-tags"><span>Python</span><span>Apache Spark</span><span>AWS</span><span>Power BI</span><span>Pandas</span><span>ETL</span><span>SQL</span><span>Airflow</span><span>Terraform</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-alt">
+    <div class="section-divider"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2>Professional <span class="accent">Journey</span></h2>
+        <p class="section-desc">5+ years delivering engineering excellence across commercial and industrial sectors, growing from developer to platform lead.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot--cyan"></div>
+          <div class="timeline-connector connector--cyan"></div>
+          <div class="exp-card exp-card--cyan">
+            <div class="exp-header">
+              <div class="exp-icon exp-icon--cyan"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="exp-meta">
+                <div class="exp-title-row"><h3>Senior Full Stack Engineer · Data Platform Lead</h3><span class="badge-current">● Current</span></div>
+                <div class="exp-company color-cyan">Nexora Technologies</div>
+                <div class="exp-details">
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Jan 2028 — Present</span>
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Amsterdam, Netherlands (Remote)</span>
+                  <span class="badge-type">Full-time · Remote</span>
+                </div>
+              </div>
+            </div>
+            <p class="exp-desc">Leading the architecture and development of a cloud-native data platform serving enterprise clients in the commercial sector. Managing a cross-functional team of 8 engineers across 3 countries.</p>
+            <div class="exp-responsibilities">
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Architected a microservices-based data ingestion platform processing 50TB+ daily using Apache Spark and AWS</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Led a distributed team of 8 engineers across 3 time zones, implementing agile methodologies</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Designed ETL pipelines using Python and Pandas, reducing data processing latency by 60%</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Built executive-level Power BI dashboards and SQL analytics reports for C-suite stakeholders</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Established CI/CD pipelines using Azure DevOps and Docker, improving deployment frequency by 4×</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Mentored 3 junior engineers and conducted code reviews to maintain clean architecture standards</div>
+            </div>
+            <div class="exp-skills exp-skills--cyan"><span>Apache Spark</span><span>AWS</span><span>NestJS</span><span>PostgreSQL</span><span>Python</span><span>Power BI</span><span>Docker</span><span>Azure DevOps</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot--indigo"></div>
+          <div class="timeline-connector connector--indigo"></div>
+          <div class="exp-card exp-card--indigo">
+            <div class="exp-header">
+              <div class="exp-icon exp-icon--indigo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="exp-meta">
+                <div class="exp-title-row"><h3>Full Stack Developer · Data Engineer</h3></div>
+                <div class="exp-company color-indigo">DataBridge Solutions</div>
+                <div class="exp-details">
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Mar 2026 — Dec 2027</span>
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Madrid, Spain (Hybrid)</span>
+                  <span class="badge-type">Full-time · Hybrid</span>
+                </div>
+              </div>
+            </div>
+            <p class="exp-desc">Developed and maintained enterprise web applications and data pipelines for industrial clients, bridging frontend development with backend data engineering.</p>
+            <div class="exp-responsibilities">
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Built REST APIs and GraphQL services using NestJS and Java Spring Boot for industrial clients</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Developed React-based internal dashboards with TypeScript and Vite, improving productivity by 35%</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Implemented PostgreSQL schemas with PL/SQL procedures and query optimization for reporting</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Created automated data validation pipelines using Python and Pandas for ETL workflows</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Collaborated with DevOps to containerize services with Docker and deploy to AWS</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Participated in database modeling and migration planning for a large-scale PostgreSQL upgrade</div>
+            </div>
+            <div class="exp-skills exp-skills--indigo"><span>React</span><span>TypeScript</span><span>NestJS</span><span>Java</span><span>PostgreSQL</span><span>Python</span><span>GraphQL</span><span>Docker</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot--emerald"></div>
+          <div class="timeline-connector connector--emerald"></div>
+          <div class="exp-card exp-card--emerald">
+            <div class="exp-header">
+              <div class="exp-icon exp-icon--emerald"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="exp-meta">
+                <div class="exp-title-row"><h3>Junior Full Stack Developer</h3></div>
+                <div class="exp-company color-emerald">InnovateSoft</div>
+                <div class="exp-details">
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Aug 2024 — Feb 2026</span>
+                  <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Bogotá, Colombia</span>
+                  <span class="badge-type">Full-time · Onsite</span>
+                </div>
+              </div>
+            </div>
+            <p class="exp-desc">Started as a junior developer building internal tools and web applications, quickly growing into full stack responsibilities across multiple commercial projects.</p>
+            <div class="exp-responsibilities">
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Developed frontend components using React, HTML5, CSS3, and JavaScript for client-facing applications</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Built and maintained RESTful APIs using Node.js and .NET frameworks</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Designed relational database schemas and optimized SQL queries for performance</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Assisted in migrating legacy systems to a microservices architecture with Docker</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Implemented unit and integration tests, increasing overall test coverage to 80%</div>
+              <div><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg> Contributed to data reporting modules using SQL Analytics and basic Power BI integration</div>
+            </div>
+            <div class="exp-skills exp-skills--emerald"><span>React</span><span>JavaScript</span><span>Node.js</span><span>.NET</span><span>SQL</span><span>Git</span><span>Docker</span><span>REST APIs</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-divider"></div>
+    <div class="glow-bottom-center"></div>
+    <div class="container contact-container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>Let's <span class="accent">Work Together</span></h2>
+        <p class="section-desc">Open to remote opportunities worldwide, exciting projects, and international collaborations. Let's build something great.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="card contact-info-card">
+            <div class="contact-info-header">
+              <div class="contact-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div><div class="contact-info-title">Get In Touch</div><div class="contact-info-sub">I typically respond within 24 hours</div></div>
+            </div>
+            <p class="contact-text">Whether you have an exciting opportunity, a project idea, or just want to connect — I'd love to hear from you. I'm particularly interested in roles focused on data engineering, full stack development, and cloud-native platforms.</p>
+            <div class="availability-badge"><span class="dot-green-sm"></span> Available for new opportunities — Remote &amp; Worldwide</div>
+            <div class="contact-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open to relocation abroad
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/EmilyCastill0" target="_blank" rel="noreferrer" class="social-link">
+                <div class="social-icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+                <div><div class="social-label">GitHub</div><div class="social-handle">@EmilyCastill0</div></div>
+              </a>
+              <a href="https://www.linkedin.com/in/emily-castillo-monge-1679413b4" target="_blank" rel="noreferrer" class="social-link">
+                <div class="social-icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+                <div><div class="social-label">LinkedIn</div><div class="social-handle">emily-castillo-monge</div></div>
+              </a>
+              <a href="mailto:emicastillo0521@gmail.com" class="social-link">
+                <div class="social-icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div><div class="social-label">Email</div><div class="social-handle">emicastillo0521@gmail.com</div></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card contact-form-card" id="contactFormWrap">
+          <div id="formSuccess" class="form-success hidden">
+            <div class="success-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out! I'll get back to you within 24 hours.</p>
+            <button type="button" onclick="resetForm()" class="btn-outline-sm">Send Another Message</button>
+          </div>
+          <form id="contactForm" onsubmit="handleFormSubmit(event)" novalidate>
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="Job Opportunity / Project Collaboration / ..." required>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-send" id="sendBtn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="nav-logo-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+          <span><span class="accent">Emily</span><span class="light">Castillo</span></span>
+        </div>
+        <p class="footer-tagline">Full Stack Developer · Data-Oriented Engineer<br>Open to remote &amp; international opportunities.</p>
+      </div>
+      <div class="footer-nav">
+        <button type="button" onclick="scrollToSection('#about')">About</button>
+        <button type="button" onclick="scrollToSection('#skills')">Skills</button>
+        <button type="button" onclick="scrollToSection('#projects')">Projects</button>
+        <button type="button" onclick="scrollToSection('#experience')">Experience</button>
+        <button type="button" onclick="scrollToSection('#contact')">Contact</button>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/EmilyCastill0" target="_blank" rel="noreferrer" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://www.linkedin.com/in/emily-castillo-monge-1679413b4" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="mailto:emicastillo0521@gmail.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container footer-bottom">
+      <p>© 2025 Emily Castillo · Built with HTML5, CSS3 &amp; JavaScript</p>
+      <button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="back-to-top">
+        Back to top
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
