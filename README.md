@@ -7,6 +7,16 @@
 
 ---
 
+## 🌐 Sitio web
+
+**[Ver portafolio en vivo →](https://emilycastill0.github.io/portafolio-emily-castillo/)**
+
+## 🎨 Diseño en Figma
+
+**[Ver diseño en Figma →](https://www.figma.com/make/nuoHT2Y8nss6gW4LPsYINf/Portfolio-Website-for-Emily-Castillo?t=ILvgWuCLTF7L9dWw-20&fullscreen=1)**
+
+---
+
 ## Introducción
 
 Para esta actividad se realizó una investigación de diversas ofertas laborales relacionadas con el área de ingeniería de software y desarrollo tecnológico. Las ofertas fueron obtenidas principalmente desde plataformas de empleo como LinkedIn y corresponden a empresas tanto internacionales como locales.
@@ -220,15 +230,9 @@ Salario:
 
 ### Costa Rica (estimado según el mercado)
 
-Intern / Practicante  
-Entre:
+Intern / Practicante — entre $800 – $1,500 mensuales
 
-- $800 – $1500 mensuales  
-
-Desarrollador Junior  
-Entre:
-
-- $2000 – $3500 mensuales  
+Desarrollador Junior — entre $2,000 – $3,500 mensuales
 
 ---
 
@@ -296,14 +300,3 @@ Después de analizar más de treinta ofertas laborales se puede observar que el 
 Los lenguajes más solicitados actualmente son JavaScript, Python y Java, mientras que tecnologías como cloud computing, inteligencia artificial y desarrollo web dominan el mercado.
 
 Además, el trabajo remoto está permitiendo que profesionales del área tecnológica puedan trabajar con empresas internacionales, ampliando las oportunidades laborales.
-
----
-
-# Figma
-
-[Ver diseño en Figma](https://www.figma.com/make/nuoHT2Y8nss6gW4LPsYINf/Portfolio-Website-for-Emily-Castillo?t=ILvgWuCLTF7L9dWw-20&fullscreen=1)
-
----
-
-# Sitio web
-
