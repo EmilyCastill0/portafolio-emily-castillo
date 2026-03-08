@@ -1,4 +1,3 @@
-
 function scrollToSection(href) {
   const el = document.querySelector(href);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -51,7 +50,7 @@ function closeMenu() {
 }
 
 function filterSkills(btn, category) {
-
+  // Update active button
   document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
   btn.classList.add('active');
 
@@ -142,3 +141,100 @@ document.addEventListener('keydown', function (e) {
     document.body.style.overflow = '';
   }
 });
+
+function switchDemoTab(tabBtn, views, activeId) {
+  tabBtn.closest('.demo-topbar').querySelectorAll('.demo-tab').forEach(function(t){ t.classList.remove('active'); });
+  tabBtn.classList.add('active');
+  views.forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+  });
+  var target = document.getElementById(activeId);
+  if (target) target.classList.remove('hidden');
+}
+
+function taskTab(btn, view) {
+  switchDemoTab(btn, ['demo-task-kanban','demo-task-analytics'], 'demo-task-' + view);
+}
+function acctTab(btn, view) {
+  switchDemoTab(btn, ['demo-acct-overview','demo-acct-transactions'], 'demo-acct-' + view);
+}
+function analyticsTab(btn, view) {
+  switchDemoTab(btn, ['demo-analytics-kpis','demo-analytics-pipeline'], 'demo-analytics-' + view);
+}
+
+function demoMoveCard(card) {
+  if (card.classList.contains('kanban-card--done') || card.classList.contains('kanban-card--active')) return;
+  card.style.transition = 'opacity 0.3s, transform 0.3s';
+  card.style.opacity = '0';
+  card.style.transform = 'scale(0.9)';
+  setTimeout(function() {
+    var doneCol = card.closest('.kanban-board').querySelector('.kanban-col:last-child');
+    card.classList.add('kanban-card--done');
+    card.style.opacity = '';
+    card.style.transform = '';
+    doneCol.appendChild(card);
+    var count = doneCol.querySelector('.kanban-count');
+    if (count) count.textContent = doneCol.querySelectorAll('.kanban-card').length;
+  }, 300);
+}
+
+function switchDemoTab(topbar, views, activeId) {
+  topbar.querySelectorAll('.demo-tab').forEach(function(t){ t.classList.remove('active'); });
+  views.forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+  });
+  var target = document.getElementById(activeId);
+  if (target) target.classList.remove('hidden');
+}
+function taskTab(btn, view) {
+  btn.classList.add('active');
+  switchDemoTab(btn.closest('.demo-topbar'), ['demo-task-kanban','demo-task-analytics'], 'demo-task-' + view);
+}
+function acctTab(btn, view) {
+  btn.classList.add('active');
+  switchDemoTab(btn.closest('.demo-topbar'), ['demo-acct-overview','demo-acct-transactions'], 'demo-acct-' + view);
+}
+function analyticsTab(btn, view) {
+  btn.classList.add('active');
+  switchDemoTab(btn.closest('.demo-topbar'), ['demo-analytics-kpis','demo-analytics-pipeline'], 'demo-analytics-' + view);
+}
+
+function demoMoveCard(card) {
+  var board = card.closest('.kanban-board');
+  var doneCol = board.querySelector('.kanban-col:last-child');
+  var todoCol = board.querySelector('.kanban-col:first-child');
+
+  if (card.classList.contains('kanban-card--done')) {
+    animateCard(card, function() {
+      card.classList.remove('kanban-card--done');
+      todoCol.appendChild(card);
+      updateCount(doneCol);
+      updateCount(todoCol);
+    });
+    return;
+  }
+  if (card.classList.contains('kanban-card--active')) return;
+
+  animateCard(card, function() {
+    card.classList.add('kanban-card--done');
+    doneCol.appendChild(card);
+    updateCount(doneCol);
+    updateCount(todoCol);
+  });
+}
+function animateCard(card, cb) {
+  card.style.transition = 'opacity 0.22s, transform 0.22s';
+  card.style.opacity = '0';
+  card.style.transform = 'scale(0.9)';
+  setTimeout(function() {
+    card.style.opacity = '';
+    card.style.transform = '';
+    cb();
+  }, 230);
+}
+function updateCount(col) {
+  var cnt = col.querySelector('.kanban-count');
+  if (cnt) cnt.textContent = col.querySelectorAll('.kanban-card').length;
+}
