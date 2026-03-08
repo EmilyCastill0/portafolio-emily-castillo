@@ -50,17 +50,27 @@ function closeMenu() {
 }
 
 function filterSkills(btn, category) {
-  // Update active button
   document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
   btn.classList.add('active');
 
-  document.querySelectorAll('.skill-card').forEach((card) => {
+  const grid = document.getElementById('skillsGrid');
+  const cards = document.querySelectorAll('.skill-card');
+
+  cards.forEach((card) => {
     if (category === 'all' || card.dataset.category === category) {
       card.classList.remove('hidden');
     } else {
       card.classList.add('hidden');
     }
   });
+
+  const visibleCount = document.querySelectorAll('.skill-card:not(.hidden)').length;
+
+  if (visibleCount === 1) {
+    grid.classList.add('skills-grid--single');
+  } else {
+    grid.classList.remove('skills-grid--single');
+  }
 }
 
 function handleFormSubmit(e) {

@@ -547,6 +547,19 @@ section { padding: 100px 0; position: relative; }
 .skill-card:hover { transform: translateY(-2px); }
 .skill-card.hidden { display: none; }
 
+.skills-grid--single {
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills-grid--single .skill-card-header { margin-bottom: 28px; }
+.skills-grid--single .skill-icon { width: 56px; height: 56px; border-radius: 14px; }
+.skills-grid--single .skill-icon svg { width: 26px; height: 26px; }
+.skills-grid--single .skill-card-header h3 { font-size: 1.3rem; }
+.skills-grid--single .skill-tags { gap: 12px; }
+.skills-grid--single .tag { padding: 8px 20px; font-size: 0.88rem; border-radius: 8px; }
+
 .skill-card-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
 .skill-icon {
   width: 44px; height: 44px;
