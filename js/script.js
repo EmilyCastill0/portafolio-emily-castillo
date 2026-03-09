@@ -6,7 +6,7 @@ function scrollToSection(href) {
 (function () {
   const navbar = document.getElementById('navbar');
   const navButtons = document.querySelectorAll('.nav-links button:not(.btn-hire)');
-  const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
+  const sections = ['hero', 'about', 'skills', 'certifications', 'projects', 'experience', 'contact'];
 
   function onScroll() {
 

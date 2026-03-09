@@ -1,302 +1,225 @@
-# Investigación del Trabajo Soñado
+Readme · MD
+Copiar
 
-![HTML5](https://img.shields.io/badge/HTML5-Structure-orange)
-![CSS3](https://img.shields.io/badge/CSS3-Responsive-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-Limited-yellow)
-![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-success)
+# 🔍 Investigación del Trabajo Soñado
 
----
+<div align="center">
 
-## 🌐 Sitio web
+![HTML5](https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Limited-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-**[Ver portafolio en vivo →](https://emilycastill0.github.io/portafolio-emily-castillo/)**
+<br/>
 
-## 🎨 Diseño en Figma
+### 🌐 [Ver portafolio en vivo →](https://emilycastill0.github.io/portafolio-emily-castillo/)
+### 🎨 [Ver diseño en Figma →](https://www.figma.com/make/nuoHT2Y8nss6gW4LPsYINf/Portfolio-Website-for-Emily-Castillo?t=ILvgWuCLTF7L9dWw-20&fullscreen=1)
 
-**[Ver diseño en Figma →](https://www.figma.com/make/nuoHT2Y8nss6gW4LPsYINf/Portfolio-Website-for-Emily-Castillo?t=ILvgWuCLTF7L9dWw-20&fullscreen=1)**
-
----
-
-## Introducción
-
-Para esta actividad se realizó una investigación de diversas ofertas laborales relacionadas con el área de ingeniería de software y desarrollo tecnológico. Las ofertas fueron obtenidas principalmente desde plataformas de empleo como LinkedIn y corresponden a empresas tanto internacionales como locales.
+</div>
 
 ---
 
-## Puestos de trabajo encontrados
+## 📌 Introducción
+
+Para esta actividad se realizó una investigación de diversas ofertas laborales relacionadas con el área de ingeniería de software y desarrollo tecnológico. Las ofertas fueron obtenidas principalmente desde **LinkedIn** y corresponden a empresas tanto internacionales como locales.
+
+---
+
+## 💼 Puestos de trabajo encontrados
 
 Entre todas las ofertas analizadas se identificaron principalmente los siguientes tipos de puestos:
 
-- Software Engineer  
-- Software Engineer Intern  
-- Embedded Software Engineer  
-- Frontend Engineer  
-- Frontend Developer (React)  
-- Backend Developer (Node.js)  
-- Junior Software Engineer  
-- Python Developer  
-- Java Junior Engineer  
-- Web Developer  
-- IT Analyst Intern  
-- Software Engineering Intern  
-- Agentic Platform Engineering Intern  
-- Ubuntu Software Engineer  
+| Área | Puestos encontrados |
+|------|-------------------|
+| **Ingeniería General** | Software Engineer, Junior Software Engineer, Software Engineering Intern |
+| **Frontend** | Frontend Engineer, Frontend Developer (React), Web Developer |
+| **Backend** | Backend Developer (Node.js), Python Developer, Java Junior Engineer |
+| **Especializado** | Embedded Software Engineer, Agentic Platform Engineering Intern, Ubuntu Software Engineer |
+| **Soporte** | IT Analyst Intern |
 
-### Conclusión
+### 💡 Conclusión
 
 La mayoría de los puestos pertenecen al área de ingeniería de software, especialmente en:
 
-- Desarrollo Frontend  
-- Desarrollo Backend  
-- Desarrollo Full Stack  
-- Desarrollo en la nube (Cloud)  
-- Inteligencia Artificial y datos  
+- Desarrollo Frontend y Backend
+- Desarrollo Full Stack
+- Cloud Computing
+- Inteligencia Artificial y Datos
 
 ---
 
-## Tecnologías y lenguajes más solicitados
-
-Durante el análisis de las ofertas se encontraron varios lenguajes de programación recurrentes.
+## 🧑‍💻 Tecnologías y lenguajes más solicitados
 
 ### Lenguajes más mencionados
 
-- JavaScript  
-- Python  
-- Java  
-- C / C++  
-- TypeScript  
-- Go  
-- Rust  
-- PHP  
-- Ruby  
+```
+JavaScript  ████████████████████  ⭐ Muy solicitado
+Python      ████████████████████  ⭐ Muy solicitado
+Java        ████████████████████  ⭐ Muy solicitado
+TypeScript  ████████████░░░░░░░░
+C / C++     ████████████░░░░░░░░
+Go          ████████░░░░░░░░░░░░
+Rust        ██████░░░░░░░░░░░░░░
+PHP / Ruby  ████░░░░░░░░░░░░░░░░
+```
 
-### Conclusión
+### 💡 Conclusión
 
-Los lenguajes más solicitados actualmente en el mercado laboral son:
-
-- JavaScript / TypeScript  
-- Python  
-- Java  
+Los lenguajes más solicitados actualmente en el mercado laboral son **JavaScript / TypeScript**, **Python** y **Java**.
 
 ---
 
-## Frameworks y tecnologías utilizadas
+## 🛠️ Frameworks y tecnologías
 
-### Frontend
+### 🖥️ Frontend
 
-Las tecnologías más utilizadas en desarrollo web frontend son:
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-35495E?style=flat&logo=vue.js&logoColor=4FC08D)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)
 
-- React  
-- Angular  
-- Vue  
-- HTML  
-- CSS  
-- SCSS  
+### ⚙️ Backend
 
-### Backend
-
-Entre las tecnologías backend más mencionadas se encuentran:
-
-- Node.js  
-- NestJS  
-- APIs REST  
-- MySQL  
-- Bases de datos NoSQL  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
+![REST](https://img.shields.io/badge/REST%20APIs-005571?style=flat)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![NoSQL](https://img.shields.io/badge/NoSQL-47A248?style=flat&logo=mongodb&logoColor=white)
 
 ---
 
-## Tecnologías modernas y áreas emergentes
+## 🚀 Tecnologías modernas y áreas emergentes
 
-Muchas empresas buscan conocimientos en áreas tecnológicas modernas como:
+> Muchas empresas buscan conocimientos en estas áreas tecnológicas de alta demanda:
 
-- Inteligencia Artificial (AI)  
-- Machine Learning  
-- Big Data  
-- Cloud Computing  
-- Data Analytics  
-- Microservices  
-- DevOps  
-- CI/CD  
-- Software SaaS  
+```
+🤖 Inteligencia Artificial (AI)     ☁️ Cloud Computing (AWS / Azure / GCP)
+📊 Data Analytics                   🔄 DevOps y CI/CD
+📦 Microservices                    🧠 Machine Learning
+📈 Big Data                         💻 Software SaaS
+```
 
-### Plataformas Cloud mencionadas
+### ☁️ Plataformas Cloud más mencionadas
 
-- AWS  
-- Microsoft Azure  
-- Google Cloud  
-
----
-
-## Herramientas técnicas comunes
-
-Las ofertas laborales también mencionan herramientas importantes utilizadas en el desarrollo profesional:
-
-- Git (control de versiones)  
-- Docker  
-- Kubernetes  
-- Linux  
-- APIs REST  
-- Testing frameworks  
-- CI/CD pipelines  
-- Herramientas de debugging  
-
-Una de las herramientas más repetidas fue Git, utilizada para el control de versiones en proyectos de software.
+| Plataforma | Frecuencia |
+|------------|-----------|
+| ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white) Amazon Web Services | Alta |
+| ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white) Microsoft Azure | Alta |
+| ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white) Google Cloud Platform | Media |
 
 ---
 
-## Habilidades blandas requeridas
+## 🔧 Herramientas técnicas comunes
 
-Además de habilidades técnicas, las empresas también buscan habilidades personales como:
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Pipelines-2088FF?style=flat)
 
-- Resolución de problemas  
-- Comunicación efectiva  
-- Trabajo en equipo  
-- Pensamiento analítico  
-- Capacidad de aprendizaje continuo  
-- Adaptabilidad a nuevas tecnologías  
-- Colaboración con equipos multidisciplinarios  
-
-El dominio del idioma inglés también aparece como un requisito frecuente.
+Una de las herramientas más repetidas fue **Git**, utilizada para el control de versiones en proyectos de software.
 
 ---
 
-## Ubicación de los empleos
+## 🤝 Habilidades blandas requeridas
 
-Las ofertas analizadas provienen de diferentes regiones del mundo.
-
-### Costa Rica
-
-Principales ciudades:
-
-- Heredia  
-- San José  
-
-Empresas relevantes:
-
-- Cisco  
-- Boston Scientific  
-- TradeStation  
-- SchoolMint  
-- Hewlett Packard Enterprise  
-
-### Europa
-
-Principalmente en:
-
-- España  
-- Barcelona  
-- Madrid  
-
-Empresas:
-
-- Amazon  
-- Microsoft  
-- Revolut  
-- REVER  
-- Optimissa  
-- ALTECH  
-
-### Trabajo remoto
-
-Muchas ofertas permiten:
-
-- trabajo remoto  
-- trabajo híbrido  
-- colaboración internacional  
-
-Esto demuestra que la industria del software permite trabajar con empresas globales.
+| Habilidad | Descripción |
+|-----------|-------------|
+| 🧩 Resolución de problemas | Capacidad analítica ante desafíos técnicos |
+| 💬 Comunicación efectiva | Técnica y no técnica |
+| 👥 Trabajo en equipo | Colaboración con equipos multidisciplinarios |
+| 🔄 Adaptabilidad | A nuevas tecnologías y entornos cambiantes |
+| 📚 Aprendizaje continuo | Mantenerse actualizado en tendencias |
+| 🌐 Inglés | Requisito frecuente en ofertas internacionales |
 
 ---
 
-## Salarios estimados
+## 📍 Ubicación de los empleos
 
-### España
+### 🇨🇷 Costa Rica
 
-Ejemplo encontrado en una oferta:
+**Principales ciudades:** Heredia · San José
 
-- Junior Software Engineer  
-
-Salario aproximado:
-
-- 30,000 € – 70,000 € anuales  
-
-### Trabajo remoto internacional
-
-- Frontend Engineer (contrato)
-
-Salario:
-
-- $70 – $150 por hora  
-
-### Costa Rica (estimado según el mercado)
-
-Intern / Practicante — entre $800 – $1,500 mensuales
-
-Desarrollador Junior — entre $2,000 – $3,500 mensuales
+**Empresas relevantes:**
+> Cisco · Boston Scientific · TradeStation · SchoolMint · Hewlett Packard Enterprise
 
 ---
 
-## Actividades comunes en los puestos
+### 🇪🇸 Europa
 
-Las responsabilidades principales encontradas en las ofertas incluyen:
+**Principalmente en:** España (Barcelona · Madrid)
 
-### Desarrollo de software
-
-- Diseñar aplicaciones  
-- Programar nuevas funcionalidades  
-- Desarrollar APIs  
-- Integrar sistemas  
-
-### Mantenimiento de software
-
-- Corregir errores  
-- Optimizar el rendimiento  
-- Actualizar sistemas existentes  
-
-### Trabajo colaborativo
-
-- Revisiones de código  
-- Trabajo con diseñadores y product managers  
-- Participación en equipos ágiles  
-
-### Pruebas y calidad
-
-- Unit testing  
-- Debugging  
-- Quality assurance  
-
-### Documentación
-
-- Crear documentación técnica  
-- Mantener documentación de proyectos  
+**Empresas:**
+> Amazon · Microsoft · Revolut · REVER · Optimissa · ALTECH
 
 ---
 
-## Requisitos más comunes
+### 🌍 Trabajo Remoto
+
+Muchas ofertas permiten trabajo **remoto**, **híbrido** y **colaboración internacional**, lo que demuestra que la industria del software permite trabajar con empresas globales desde cualquier lugar.
+
+---
+
+## 💰 Salarios estimados
+
+| Región | Puesto | Salario |
+|--------|--------|---------|
+| 🇪🇸 España | Junior Software Engineer | €30,000 – €70,000 / año |
+| 🌍 Remoto internacional | Frontend Engineer (contrato) | $70 – $150 / hora |
+| 🇨🇷 Costa Rica | Intern / Practicante | $800 – $1,500 / mes |
+| 🇨🇷 Costa Rica | Desarrollador Junior | $2,000 – $3,500 / mes |
+
+---
+
+## 📋 Actividades comunes en los puestos
+
+```
+💻 Desarrollo         🔧 Mantenimiento      👥 Colaboración
+─────────────────     ─────────────────     ─────────────────
+Diseñar aplicaciones  Corregir errores      Revisiones de código
+Programar funciones   Optimizar rendimiento Trabajo con diseño/PM
+Desarrollar APIs      Actualizar sistemas   Equipos ágiles
+Integrar sistemas
+
+🧪 Pruebas y QA       📝 Documentación
+─────────────────     ─────────────────
+Unit testing          Documentación técnica
+Debugging             Mantener proyectos
+Quality assurance
+```
+
+---
+
+## 🎓 Requisitos más comunes
 
 ### Educación
 
 Las carreras más solicitadas son:
-
-- Ingeniería en Software  
-- Ciencias de la Computación  
-- Ingeniería en Sistemas  
-- Carreras STEM  
+- Ingeniería en Software
+- Ciencias de la Computación
+- Ingeniería en Sistemas
+- Carreras STEM
 
 ### Experiencia
 
-Muchas ofertas junior solicitan:
-
-- 0 a 2 años de experiencia  
-- prácticas profesionales  
-- proyectos personales o académicos  
+Muchas ofertas junior solicitan **0 a 2 años** de experiencia, prácticas profesionales o proyectos personales/académicos.
 
 ---
 
-## Conclusión
+## 📊 Conclusión
 
-Después de analizar más de treinta ofertas laborales se puede observar que el mercado laboral en el área de ingeniería de software continúa creciendo y demandando profesionales con habilidades técnicas sólidas.
+> Después de analizar más de **treinta ofertas laborales** se puede observar que el mercado laboral en el área de ingeniería de software continúa creciendo y demandando profesionales con habilidades técnicas sólidas.
 
-Los lenguajes más solicitados actualmente son JavaScript, Python y Java, mientras que tecnologías como cloud computing, inteligencia artificial y desarrollo web dominan el mercado.
+Los lenguajes más solicitados son **JavaScript**, **Python** y **Java**, mientras que tecnologías como cloud computing, inteligencia artificial y desarrollo web dominan el mercado.
 
-Además, el trabajo remoto está permitiendo que profesionales del área tecnológica puedan trabajar con empresas internacionales, ampliando las oportunidades laborales.
+El **trabajo remoto** está permitiendo que profesionales del área tecnológica puedan trabajar con empresas internacionales, ampliando enormemente las oportunidades laborales.
+
+---
+
+<div align="center">
+
+*Investigación realizada como parte de la actividad académica · 2026*
+
+</div>
